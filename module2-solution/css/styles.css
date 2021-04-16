@@ -1,0 +1,83 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-family: fantasy;
+  }
+  h2{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*float: right;*/
+    text-align: center;
+    border: 1px solid black;
+    font-family:monospace;
+  }
+
+  .col1{
+  background-color: #AD85E9;
+  }
+  .col2{
+  background-color: #E985C1;
+  }
+  .col3{
+  background-color:#85E9DF;
+  }
+
+  section{
+    margin: 15px;
+    background-color: #C1E985;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+       
+  }
+  p{
+    margin: 45px 15px 15px 15px; 
+  }
+
+  /********** desktop **********/
+  @media (min-width: 992px) {
+    .col-1, .col-2, .col-3 {
+      float: left;
+      width: 33.33%;}
+    h2{
+      width: 30%;
+    } 
+  }
+  
+  /********** tablet **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-1,.col-2 {
+      float: left;
+      width: 50%;
+    }
+    .col-3{
+      clear: both;
+      width:100%;
+  }
+  .col1,.col2{
+    width: 30%;
+  }
+  .col3{
+    width: 15%;
+  }
+}
+  /********** mobile **********/
+  @media (max-width: 767px){.col-1,.col-2,.col-3{
+      float: left;
+      width: 100%;
+      word-wrap:break-word;
+  }
+  h2{
+    width: 30%;
+  }
+  
+  }
+  
